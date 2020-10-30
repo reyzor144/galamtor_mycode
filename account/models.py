@@ -45,6 +45,7 @@ class Account(AbstractBaseUser):
     name = models.CharField(verbose_name="Имя", max_length=40, unique=True)
     surname = models.CharField(verbose_name="Фамилия", max_length=40, unique=True)
     third_name = models.CharField(verbose_name="Отчество", max_length=40, unique=True)
+    birthday_date = models.DateField(verbose_name="Дата рождения", auto_now=True)
 
     is_teacher = models.BooleanField(default=False)
 
