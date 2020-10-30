@@ -4,7 +4,9 @@ from account.models import Account
 
 
 class AccountAdmin(UserAdmin):
-    list_display = ('email', 'username', 'date_joined', 'last_login', 'is_admin', 'is_staff')
+    list_display = (
+        'email', 'username', 'date_joined', 'last_login', 'is_admin', 'is_staff', 'name', 'surname',
+        'third_name')
     search_fields = ('email', 'username',)
     readonly_fields = ('date_joined', 'last_login')
 
@@ -12,5 +14,5 @@ class AccountAdmin(UserAdmin):
     list_filter = ()
     fieldsets = ()
 
-admin.site.register(Account, AccountAdmin)
 
+admin.site.register(Account, AccountAdmin)
