@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sign-up</title>
+    </head>
+    <body style="background-color: aquamarine">
+      <h1>Registration page</h1>
+            <form method="POST" action="">
+                {% csrf_token %}
+                <div>{{form.username.label}}
+                    {{form.username}}</div>
+                <br>
+                <div>
+                {{form.email.label}}
+                    {{form.email}}</div>
+                <br>
+                <div>
+                {{form.password1.label}}
+                    {{form.password1}}</div>
+                <br>
+                <div>{{form.password2.label}}
+                    {{form.password2}}</div>
+<!--                {% for field in form %}-->
+<!--                    {{field.label}}-->
+<!--                    {{field}}-->
+<!--                {% endfor %}-->
+             <br>
+                <input type="submit" name="register_a_new_user">
+        </form>
+    </body>
+</html>
