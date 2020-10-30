@@ -1,30 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5ebc2a1f-fc7b-4652-9589-1718dfd8797a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/account/static/account/scripts/change_log.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/static/account/scripts/hide_topnav.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/static/account/scripts/open_sidenav.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/static/account/stylesheets/account_styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/static/account/stylesheets/login_styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/templates/account/account_manager.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/templates/account/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/static/account/stylesheets/reg_styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/account/static/account/stylesheets/reg_styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/templates/account/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/account/templates/account/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home_page/static/home_page/scripts/Visual_enh.js" beforeDir="false" afterPath="$PROJECT_DIR$/home_page/static/home_page/scripts/Visual_enh.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home_page/static/home_page/stylesheets/home_styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/home_page/static/home_page/stylesheets/home_styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home_page/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/home_page/templates/home_page/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home_page/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home_page/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_site/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/sample_site/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_site/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/sample_site/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/register.html" beforeDir="false" />
-    </list>
+    <list default="true" id="5ebc2a1f-fc7b-4652-9589-1718dfd8797a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,18 +42,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="JupyterTrust" id="21127e9a-9efc-4f27-bdf2-cf78b7a30ed0" />
   <component name="ProjectId" id="1j34hp6GJnjhjUmKQpSbaOPYLdn" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -84,7 +61,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -98,7 +75,7 @@
       <recent name="D:\a_Python_progs\Django_site_sample\GALAMTHOR_MYCODE\sample_site\templates" />
     </key>
   </component>
-  <component name="RunManager" selected="Django Server.Unnamed">
+  <component name="RunManager" selected="Django Server.sample_site">
     <configuration name="Unnamed" type="Python.DjangoServer" factoryName="Django server" nameIsGenerated="true">
       <module name="sample_site" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -152,18 +129,7 @@
       <item itemvalue="Django Server.sample_site" />
     </list>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -184,21 +150,23 @@
       <workItem from="1603388762435" duration="4887000" />
       <workItem from="1603436867586" duration="15669000" />
       <workItem from="1603475840055" duration="596000" />
+      <workItem from="1604078943183" duration="3489000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1639" y="322" key="#Unnamed" timestamp="1603388724463">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1639" y="322" key="#Unnamed/0.0.2560.1400@0.0.2560.1400" timestamp="1603388724463" />
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603020588907">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="414" y="204" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604081187939">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603020588907" />
+    <state x="414" y="204" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1604081187939" />
     <state x="1679" y="506" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603137699873">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -231,11 +199,12 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1603023267549" />
-    <state x="288" y="357" key="SettingsEditor" timestamp="1603132797578">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="216" y="296" width="1022" height="737" key="SettingsEditor" timestamp="1604080584828">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1603020518071" />
     <state x="288" y="357" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1603132797578" />
+    <state x="216" y="296" width="1022" height="737" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1604080584828" />
     <state width="254" height="198" key="ShowFilterAction_Filter_Popup" timestamp="1603025468592">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
