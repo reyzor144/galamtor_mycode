@@ -11,7 +11,7 @@ class MyAccountManager(BaseUserManager):
 
         user = self.model(
             email=self.normalize_email(email),
-            username=username,
+            username=username
         )
 
         user.set_password(password)
@@ -45,12 +45,11 @@ class Account(AbstractBaseUser):
     name = models.CharField(verbose_name="Имя", max_length=40, unique=True)
     surname = models.CharField(verbose_name="Фамилия", max_length=40, unique=True)
     third_name = models.CharField(verbose_name="Отчество", max_length=40, unique=True)
-    birthday_date = models.DateField(verbose_name="Дата рождения", auto_now=True)
 
     is_teacher = models.BooleanField(default=False)
 
     USERNAME_FIELD = 'username'
-    REQUIRED_FIELDS = ['username',]
+    REQUIRED_FIELDS = []
 
     object = MyAccountManager()
 

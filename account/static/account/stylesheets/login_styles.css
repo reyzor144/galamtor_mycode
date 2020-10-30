@@ -5,10 +5,10 @@ html, body {
 
 body {
     /*display: flex;*/
-    width: 100vw;
-    height: 100vh;
+    min-width: 100vw;
+    min-height: 100vh;
 
-    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+    background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%) fixed;
     background-repeat: no-repeat;
     background-size: cover;
     /*background-position: right bottom;*/
@@ -16,10 +16,9 @@ body {
 
 .set-pos {
     position: absolute;
-    top: 25vh;
+    top: 100px;
     left: 40%;
 
-    width: 20%;
 }
 
 .form-header {
@@ -38,8 +37,8 @@ body {
     position: relative;
     box-sizing: border-box;
 
-    width: 100%;
-    height: 13.5vh;
+    width: 220px;
+    height: 165px;
 
     /*margin: 32.5vh auto;*/
     padding-left: 15%;

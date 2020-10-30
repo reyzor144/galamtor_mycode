@@ -1,23 +1,23 @@
+.body {
+    /*display: flex;*/
+    min-width: 100%;
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%) fixed;
+    /*background-color: red;*/
+}
+
 html, body {
     margin: 0;
     font-size: 100%;
 }
 
-body {
-    /*display: flex;*/
-    width: 100vw;
-    height: 100vh;
-
-    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
-    background-repeat: no-repeat;
-    background-size: cover;
-    /*background-position: right bottom;*/
-}
-
 .set-pos {
     position: absolute;
-    top: 25vh;
-    left: 35%;
+    top: 100px;
+    left: 500px;
+
 }
 
 .form-header {
@@ -25,7 +25,7 @@ body {
 
     margin-left: 35%;
 
-    font-size: 220%;
+    font-size: 35px;
     font-family: "KacstTitle", sans-serif;
 
     color: #404040;
@@ -36,8 +36,8 @@ body {
     position: relative;
     box-sizing: border-box;
 
-    width: 100%;
-    height: 44vh;
+    width: 330px;
+    height: 550px;
 
     /*margin: 32.5vh auto;*/
     padding-left: 5%;

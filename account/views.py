@@ -11,7 +11,7 @@ def registration_view(request):
             form.save()
             email = form.cleaned_data.get('email')
             raw_password = form.cleaned_data.get('password1')
-            account = authenticate(email=email, passowrd=raw_password)
+            account = authenticate(email=email, password=raw_password)
             login(request, account)
             return redirect('home')
         else:
