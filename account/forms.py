@@ -18,10 +18,10 @@ class AccountAuthenticationForm(forms.ModelForm):
 
     class Meta:
         model = Account
-        fields = ('email', 'password')
+        fields = ('username', 'password')
 
     def clean(self):
-        email = self.cleaned_data['email']
+        username = self.cleaned_data['username']
         password = self.cleaned_data['password']
-        if not authenticate(email=email, password=password):
+        if not authenticate(username=username, password=password):
             raise forms.ValidationError("Invalid login")

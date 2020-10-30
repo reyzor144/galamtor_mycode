@@ -1,30 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5ebc2a1f-fc7b-4652-9589-1718dfd8797a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/account/static/account/scripts/change_log.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/static/account/scripts/hide_topnav.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/static/account/scripts/open_sidenav.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/static/account/stylesheets/account_styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/static/account/stylesheets/login_styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/templates/account/account_manager.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/templates/account/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/static/account/stylesheets/reg_styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/account/static/account/stylesheets/reg_styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/templates/account/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/account/templates/account/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home_page/static/home_page/scripts/Visual_enh.js" beforeDir="false" afterPath="$PROJECT_DIR$/home_page/static/home_page/scripts/Visual_enh.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home_page/static/home_page/stylesheets/home_styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/home_page/static/home_page/stylesheets/home_styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home_page/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/home_page/templates/home_page/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home_page/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home_page/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_site/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/sample_site/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_site/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/sample_site/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/register.html" beforeDir="false" />
-    </list>
+    <list default="true" id="5ebc2a1f-fc7b-4652-9589-1718dfd8797a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,7 +53,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -98,7 +75,7 @@
       <recent name="D:\a_Python_progs\Django_site_sample\GALAMTHOR_MYCODE\sample_site\templates" />
     </key>
   </component>
-  <component name="RunManager" selected="Django Server.Unnamed">
+  <component name="RunManager" selected="Django server.Unnamed">
     <configuration name="Unnamed" type="Python.DjangoServer" factoryName="Django server" nameIsGenerated="true">
       <module name="sample_site" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -148,8 +125,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Django Server.Unnamed" />
-      <item itemvalue="Django Server.sample_site" />
+      <item itemvalue="Django server.Unnamed" />
+      <item itemvalue="Django server.sample_site" />
     </list>
   </component>
   <component name="ServiceViewManager">
@@ -184,6 +161,7 @@
       <workItem from="1603388762435" duration="4887000" />
       <workItem from="1603436867586" duration="15669000" />
       <workItem from="1603475840055" duration="596000" />
+      <workItem from="1604080655389" duration="1623000" />
     </task>
     <servers />
   </component>
@@ -207,10 +185,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="688" y="127" key="#sample_site/0.0.1920.1040@0.0.1920.1040" timestamp="1603020578058" />
-    <state x="739" y="274" key="FileChooserDialogImpl" timestamp="1603019862687">
+    <state x="739" y="274" key="FileChooserDialogImpl" timestamp="1604081679378">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="739" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1603019862687" />
+    <state x="739" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604081679378" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1603025821541">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
