@@ -32,8 +32,6 @@ class MyAccountManager(BaseUserManager):
 
 
 class Account(AbstractBaseUser):
-    email = models.EmailField(verbose_name="email", max_length=60, unique=True)
-    username = models.CharField(max_length=30, unique=True)
     date_joined = models.DateTimeField(verbose_name="date joined", auto_now_add=True)
     last_login = models.DateTimeField(verbose_name="last login", auto_now=True)
     is_admin = models.BooleanField(default=False)
@@ -41,7 +39,17 @@ class Account(AbstractBaseUser):
     is_staff = models.BooleanField(default=False)
     is_superuser = models.BooleanField(default=False)
 
-    USERNAME_FIELD = 'email'
+    email = models.EmailField(verbose_name="email", max_length=60, unique=True)
+    username = models.CharField(max_length=30, unique=True)
+
+    name = models.CharField(verbose_name="Имя", max_length=40, unique=True)
+    surname = models.CharField(verbose_name="Фамилия", max_length=40, unique=True)
+    third_name = models.CharField(verbose_name="Отчество", max_length=40, unique=True)
+    birthday_date = models.DateField(verbose_name="Дата рождения", auto_now=True)
+
+    is_teacher = models.BooleanField(default=False)
+
+    USERNAME_FIELD = 'username'
     REQUIRED_FIELDS = ['username',]
 
     object = MyAccountManager()
@@ -54,4 +62,3 @@ class Account(AbstractBaseUser):
 
     def has_module_perms(self, app_label):
         return True
-
