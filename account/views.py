@@ -1,7 +1,6 @@
 from django.shortcuts import render, redirect
-from django.contrib.auth import login, authenticate, logout, backends
+from django.contrib.auth import login, authenticate, logout
 from account.forms import RegistrationForm, AccountAuthenticationForm
-from django.contrib.auth.hashers import make_password
 
 
 def registration_view(request):
@@ -10,10 +9,6 @@ def registration_view(request):
         form = RegistrationForm(request.POST)
         if form.is_valid():
             account = form.save()
-            # username = form.cleaned_data.get('username')
-            # raw_password = form.cleaned_data.get('password1')
-            # raw_password = make_password(raw_password)
-            # account = authenticate(username=username, passowrd=raw_password)
             login(request, account, backend='django.contrib.auth.backends.ModelBackend')
             return redirect('home')
         else:

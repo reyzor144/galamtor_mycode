@@ -4,12 +4,24 @@
     <list default="true" id="5ebc2a1f-fc7b-4652-9589-1718dfd8797a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/__init__.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/account/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/account/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/migrations/__init__.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/account/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/account/templates/account/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/account/templates/account/register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/account/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home_page/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home_page/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_app/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_app/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/sample_app/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_site/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signup/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signup/migrations/__init__.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +184,7 @@
       <workItem from="1603475840055" duration="596000" />
       <workItem from="1604080655389" duration="1623000" />
       <workItem from="1604083460895" duration="3028000" />
-      <workItem from="1604086505141" duration="5207000" />
+      <workItem from="1604086505141" duration="14478000" />
     </task>
     <servers />
   </component>
@@ -192,6 +204,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1679" y="506" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1603137699873" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604098352464">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604098352464" />
     <state x="688" y="127" key="#sample_site" timestamp="1603020578058">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -234,10 +250,10 @@
     </state>
     <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604086505683" />
     <state x="875" y="463" key="com.intellij.ide.util.TipDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1603477238022" />
-    <state x="666" y="302" width="896" height="910" key="search.everywhere.popup" timestamp="1603445670290">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="623" y="227" width="672" height="676" key="search.everywhere.popup" timestamp="1604099667323">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="227" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1603025468590" />
+    <state x="623" y="227" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604099667323" />
     <state x="666" y="302" width="896" height="910" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1603445670290" />
   </component>
   <component name="XDebuggerManager">
