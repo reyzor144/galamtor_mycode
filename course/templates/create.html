@@ -1,0 +1,14 @@
+{% extends 'base_courses.html' %}
+{% block title %}
+    <h1 class="site-name">My code</h1>
+{% endblock %}
+{% block content %}
+    <form method="post">
+        {% csrf_token %}
+        {{ form.title }} <br>
+        {{ form.preview }} <br>
+        {{ form.task_text }} <br>
+        <span>{{ error }}</span>
+        <button class="button8" type="submit">Добавить задание</button>
+    </form>
+{% endblock %}

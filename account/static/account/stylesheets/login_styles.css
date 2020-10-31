@@ -1,0 +1,95 @@
+html, body {
+    margin: 0;
+    font-size: 100%;
+}
+
+body {
+    /*display: flex;*/
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%) fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-position: right bottom;*/
+}
+
+.set-pos {
+    position: absolute;
+    top: 10vh;
+    left: 35vw;
+
+    /*width: 20%;*/
+}
+
+.form-header {
+    position: relative;
+
+    margin-left: 32%;
+
+    font-size: 220%;
+    font-family: "KacstTitle", sans-serif;
+
+    color: #404040;
+    text-shadow: 1px 2px 4px lightcyan;
+}
+
+.form-body {
+    position: relative;
+    box-sizing: border-box;
+
+    width: 240px;
+    height: 170px;
+
+    /*margin: 32.5vh auto;*/
+    padding-left: 15%;
+    padding-top: 5%;
+
+    border: 3px solid lightgrey;
+
+    /*background: rgba(173, 216, 230, .4);*/
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.form-field {
+    margin-bottom: 8%;
+}
+
+.field-name {
+    font-family: "Bahnschrift", sans-serif;
+    font-size: 15px;
+}
+
+.field-hint {
+    display: block;
+
+    margin-top: 5%;
+
+    font-size: 80%;
+    font-family: "Bahnschrift", sans-serif;
+}
+
+.field-margin {
+    display: block;
+    /*margin-left: 2%;*/
+
+}
+
+.form-button {
+    width: 35%;
+    margin-left: 22.5%;
+    margin-top: 5%;
+
+    font-family: "Bahnschrift", sans-serif;
+
+    background-color: lightblue;
+    box-shadow: 5px 2px 10px lightgrey;
+}
+
+.reg-link {
+    display: block;
+    margin-top: 8%;
+
+    font-family: "Bahnschrift", sans-serif;
+    text-decoration: none;
+}
