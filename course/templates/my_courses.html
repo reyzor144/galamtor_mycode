@@ -6,6 +6,7 @@
     {% for task in tasks %}
         <div class="alert alert-warning">
             <h3>{{ task.title }}</h3>
+            <p>{{ task.preview }}</p>
             <p>{{ task.task_text }}</p>
         </div>
     {% endfor %}

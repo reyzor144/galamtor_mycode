@@ -14,7 +14,7 @@
 </header>
 
 <div class="sidenavbar">
-    <span onclick="closeNav()" class="sidenav-close-btn">✞</span>
+    <span onclick="closeNav()" class="sidenav-close-btn">&#215</span>
     <a href="#infosect1" onclick="closeNav()">Info</a>
     <a href="#infosect2" onclick="closeNav()">Your courses</a>
     {% if user.is_admin %}
@@ -38,17 +38,17 @@
 <h2 class="box-margin box-attribs" id="infosect2">Your courses</h2>
 <section class="box-margin infobox">
     <div class="id-field"><a href="#">C++ basics</a></div>
-    <div class="id-field"><a href="#">Python cources</a></div>
+    <div class="id-field"><a href="#">Some random shit</a></div>
     <div class="id-field"><a href="#">Degree in Business with Michael</a></div>
 </section>
 
 {% if user.is_admin %}
-    <h2 class="box-margin box-attribs" id="infosect3">Teacher panel</h2>
+    <h2 class="box-margin box-attribs" id="infosect3">Admin panel</h2>
     <section class="box-margin infobox">
         <div class="id-field">Your students</div>
         <div class="id-field">Recent activity</div>
-        <div class="id-field">Add student</div>
-        <div class="id-field">Add task</div>
+        <div class="id-field">Sucking action</div>
+        <div class="id-field">Sucking action</div>
     </section>
 {% endif %}
 

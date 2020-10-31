@@ -21,9 +21,9 @@ from account.models import Account
 
 
 class Task(models.Model):
-    task_name = models.CharField(verbose_name='Название')
+    task_name = models.CharField(max_length=250, verbose_name='Название')
     text = models.TextField(verbose_name="Текст задания")
-    preview = models.CharField(max_length=250, nverbose_name="Анонс задания")
+    preview = models.CharField(max_length=250, verbose_name="Анонс задания")
 
     samples = []
 

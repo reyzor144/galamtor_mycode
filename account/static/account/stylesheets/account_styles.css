@@ -57,7 +57,7 @@ html {
     display: flex;
 
     position: fixed;
-    height: 3vh;
+    height: 30px;
     width: 100%;
     top: 0;
     left: 0;
@@ -77,7 +77,7 @@ html {
     margin: auto 5% auto 0;
 
     font-family: "Bahnschrift", sans-serif;
-    font-size: 2vh;
+    font-size: 16px;
 }
 
 .sidemenu-button {
@@ -111,7 +111,7 @@ html {
 
     font-family: "KacstTitle", sans-serif;
     font-weight: bold;
-    font-size: 200%;
+    font-size: 26px;
 }
 
 .box-attribs a {
@@ -123,14 +123,14 @@ html {
 }
 
 .edit-button {
-    width: 30px;
+    width: 20px;
 
     margin-left: 35px;
 }
 
 .infobox {
     width: 95%;
-    height: 10vh;
+    height: 100px;
 
     border-style: groove;
 
@@ -146,7 +146,7 @@ html {
     padding-top: 1%;
 
     font-family: "Bahnschrift", sans-serif;
-    font-size: 100%;
+    font-size: 16px;
     /*background: blue;*/
 }
 

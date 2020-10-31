@@ -5,10 +5,10 @@ html, body {
 
 body {
     /*display: flex;*/
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 
-    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+    background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%) fixed;
     background-repeat: no-repeat;
     background-size: cover;
     /*background-position: right bottom;*/
@@ -16,8 +16,8 @@ body {
 
 .set-pos {
     position: absolute;
-    top: 25vh;
-    left: 35%;
+    top: 10vh;
+    left: 35vw;
 }
 
 .form-header {
@@ -25,7 +25,7 @@ body {
 
     margin-left: 35%;
 
-    font-size: 220%;
+    font-size: 35px;
     font-family: "KacstTitle", sans-serif;
 
     color: #404040;
@@ -37,7 +37,7 @@ body {
     box-sizing: border-box;
 
     width: 100%;
-    height: 44vh;
+    height: 600px;
 
     /*margin: 32.5vh auto;*/
     padding-left: 5%;
@@ -55,7 +55,7 @@ body {
 
 .field-name {
     font-family: "Bahnschrift", sans-serif;
-    font-size: 120%;
+    font-size: 15px;
 }
 
 .field-hint {
@@ -63,7 +63,7 @@ body {
 
     margin-top: 5%;
 
-    font-size: 80%;
+    font-size: 10px;
     font-family: "Bahnschrift", sans-serif;
 }
 

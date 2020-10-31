@@ -38,12 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # CUSTOM_APS
-    'sample_app',
     'home_page',
-    'signup',
-    'login',
     'account',
     'course',
+    'task',
 ]
 
 MIDDLEWARE = [
