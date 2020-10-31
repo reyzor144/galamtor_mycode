@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
+from course.models import Task
 
 
 class MyAccountManager(BaseUserManager):
@@ -68,6 +69,8 @@ class Account(AbstractBaseUser):
 
     birthday = models.DateField(verbose_name="Дата рождения")
     school = models.CharField(verbose_name="Образовательная организация", max_length=250)
+
+    courses = models.ManyToManyField(Task)
 
     is_teacher = models.BooleanField(default=False)
 

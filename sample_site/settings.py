@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'signup',
     'login',
     'account',
+    'course',
 ]
 
 MIDDLEWARE = [

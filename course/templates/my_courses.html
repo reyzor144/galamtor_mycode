@@ -1,0 +1,12 @@
+{% extends 'base_courses.html' %}
+{% block title %}
+    <h1 class="site-name">My code</h1>
+{% endblock %}
+{% block content %}
+    {% for task in tasks %}
+        <div class="alert alert-warning">
+            <h3>{{ task.title }}</h3>
+            <p>{{ task.task_text }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}

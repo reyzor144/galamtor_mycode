@@ -16,7 +16,7 @@ Including another URLconf
 from home_page.views import advanced_homepage_view
 from signup.views import signup_view, signup_complete_view
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from django.contrib.auth import views as auth_views
 
 from account.views import (
@@ -35,6 +35,7 @@ urlpatterns = [
     path('register/', registration_view, name='register'),
     path('logout/', logout_view, name='logout'),
     path('account/', pers_acc_view, name='account'),
+    path('courses/', include('course.urls')),
 ]
 
 
