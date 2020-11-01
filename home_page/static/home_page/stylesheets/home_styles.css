@@ -1,0 +1,200 @@
+html, body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+
+    z-index: 2;
+
+    border-bottom-style: groove;
+
+
+    /*background-color: lightblue;*/
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}
+
+.header-text {
+    display: flex;
+    margin-top: 2.5vh;
+
+    width: 100%;
+    height: 50%;
+
+    /*background-color: aquamarine;*/
+}
+
+.site-name {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 2.5%;
+
+    font-family: "KacstTitle", sans-serif;
+    font-size: 30px;
+
+    text-transform: uppercase;
+    cursor: default;
+}
+
+/*---------------------------------------------------------------------*/
+
+.navbar {
+    display: flex;
+
+    margin: auto 0 auto auto;
+
+    width: 70%;
+    height: 100%;
+
+    /*background-color: darkred;*/
+}
+
+.navbar-element {
+    margin: auto 5% auto 0;
+
+    font-family: "Bahnschrift", sans-serif;
+    font-size: 20px;
+}
+
+.first-navbar-elem {
+    margin: auto 5% auto auto;
+
+    /*-webkit-tap-highlight-color: black;*/
+    /*text-decoration-color: black;*/
+
+}
+
+/*---------------------------------------------------------------------*/
+
+.content {
+    margin-top: 12vh;
+    /*background-color: aquamarine;*/
+}
+
+.content-elem {
+    display: inline-block;
+}
+
+.courses-menu {
+    /*display: inline-block;*/
+
+    margin-left: 3%;
+
+    width: 70%;
+    /*height: 70%;*/
+
+    /*background-color: darkred;*/
+}
+
+.courses-title {
+    /*margin-left: 3%;*/
+
+    font-family: "KacstTitle", sans-serif;
+    font-size: 30px;
+}
+
+.course-dropdown-btn {
+    /* button style */
+}
+
+.course-block {
+    width: 90%;
+    /*height: 10vh;*/
+
+    margin: 5% auto 5%;
+
+    /*background-color: dimgray;*/
+}
+
+.course-title {
+    font-family: "KacstTitle", sans-serif;
+}
+
+.course-content {
+    display: none;
+}
+
+/*    !* Change color of dropdown links on hover *!*/
+.course-content a:hover {
+    background-color: #ddd;
+}
+
+.course-elem {
+    font-family: "Bahnschrift", sans-serif;
+    font-size: 120%;
+}
+
+/*---------------------------------------------------------------------*/
+
+.news-sect {
+    /*display: flex;*/
+
+    width: 25%;
+    /*height: 20%;*/
+    position: absolute;
+    top: 12vh;
+
+    z-index: 1;
+
+    border-style: solid;
+    border-width: 2px;
+
+    margin-left: 1.5%;
+    margin-right: 2%;
+
+    background-color: lightcyan;
+}
+
+.news-title {
+    margin-left: 25%;
+    /*margin-right: auto;*/
+
+    font-family: "KacstTitle", sans-serif;
+    font-size: 18px;
+}
+
+.news-post {
+    margin-left: 3%;
+    margin-right: 2%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+    width: 95%;
+    height: 5vh;
+
+    font-family: "Bahnschrift", sans-serif;
+    font-size: 115%;
+
+    background-color: rgba(0, 0, 0, .02);
+}
+
+/*---------------------------------------------------------------------*/
+
+.show {display: block;}
+
+.footer {
+    display: flex;
+
+    width: 100%;
+    height: 15vh;
+
+    margin-top: 100vh;
+
+    border-top-style: groove;
+    border-top-width: 5px;
+
+    /*background-color: lightblue;*/
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}
+
+.footer-info {
+    margin: auto;
+}

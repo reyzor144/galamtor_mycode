@@ -1,0 +1,113 @@
+from django.db import models
+from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
+from course.models import Task
+# from djangotoolbox.fields import ListField
+
+# class SeparatedValuesField(models.TextField):
+#     def __init__(self, *args, **kwargs):
+#         self.token = kwargs.pop('token', ',')
+#         super(SeparatedValuesField, self).__init__(*args, **kwargs)
+#
+#     def from_db_value(self, value, expression, connection, context):
+#         return
+#
+#     def to_python(self, value):
+#         if not value: return
+#         if isinstance(value, list):
+#             return value
+#         return value.split(self.token)
+#
+#     def get_db_prep_value(self, value):
+#         if not value: return
+#         assert(isinstance(value, list) or isinstance(value, tuple))
+#         return self.token.join([unicode(s) for s in value])
+#
+#     def value_to_string(self, obj):
+#         value = self._get_val_from_obj(obj)
+#         return self.get_db_prep_value(value)
+
+class MyAccountManager(BaseUserManager):
+    def create_user(self, email, username, password=None, name=None, surname=None, third_name=None, school=None, birthday=None):
+        if not email:
+            return ValueError("Users must have an email address")
+        if not username:
+            return ValueError("Users must have an username")
+        if not name:
+            return ValueError("Users must have a name")
+        if not surname:
+            return ValueError("Users must have a surname")
+        if not third_name:
+            return ValueError("Users must have a third_name")
+        if not school:
+            return ValueError("Users must have a school")
+        if not birthday:
+            return ValueError("Users must have a birthday")
+
+        user = self.model(
+            email=self.normalize_email(email),
+            username=username,
+            name=name,
+            surname=surname,
+            third_name=third_name,
+            school=school,
+            birthday=birthday,
+        )
+
+        user.set_password(password)
+        user.save(using=self._db)
+        return user
+
+    def create_superuser(self, email, username, password, name, surname, third_name, school, birthday):
+        user = self.create_user(
+            email=self.normalize_email(email),
+            password=password,
+            username=username,
+            name=name,
+            surname=surname,
+            third_name=third_name,
+            school=school,
+            birthday=birthday,
+        )
+        user.is_admin = True
+        user.is_staff = True
+        user.is_superuser = True
+        user.save(using=self._db)
+        return user
+
+
+class Account(AbstractBaseUser):
+    date_joined = models.DateTimeField(verbose_name="date joined", auto_now_add=True)
+    last_login = models.DateTimeField(verbose_name="last login", auto_now=True)
+    is_admin = models.BooleanField(default=False)
+    is_active = models.BooleanField(default=True)
+    is_staff = models.BooleanField(default=False)
+    is_superuser = models.BooleanField(default=False)
+
+    email = models.EmailField(verbose_name="email", max_length=60, unique=True)
+    username = models.CharField(max_length=30, unique=True)
+
+    name = models.CharField(verbose_name="Имя", max_length=40)
+    surname = models.CharField(verbose_name="Фамилия", max_length=40)
+    third_name = models.CharField(verbose_name="Отчество", max_length=40)
+
+    birthday = models.DateField(verbose_name="Дата рождения")
+    school = models.CharField(verbose_name="Образовательная организация", max_length=250)
+
+    courses = models.ManyToManyField(Task)
+    # tasks_list = SeparatedValuesField()
+
+    is_teacher = models.BooleanField(default=False)
+
+    USERNAME_FIELD = 'username'
+    REQUIRED_FIELDS = ['email', 'name', 'surname', 'third_name', 'school', 'birthday']
+
+    object = MyAccountManager()
+
+    def __str__(self):
+        return self.email + ", " + self.username
+
+    def has_perm(self, perm, obj=None):
+        return self.is_admin
+
+    def has_module_perms(self, app_label):
+        return True

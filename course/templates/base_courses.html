@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+{% load static %}
+<style>
+    .header-h1 {
+        text-align: center;
+        margin-bottom: .5rem;
+    }
+
+    .header-h1 h1 {
+        background: #0097a7;
+        margin-bottom: 0;
+        padding: .5rem 1rem;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+    .button8 {
+        display: inline-block;
+        color: #ace0f9;
+        font-weight: 700;
+        text-decoration: none;
+        user-select: none;
+        padding: .5em 2em;
+        outline: none;
+        border: 2px solid;
+        border-radius: 1px;
+        transition: 0.2s;
+        float: right;
+    }
+
+    .button8:hover {
+        background: rgba(255, 255, 255, .2);
+    }
+
+    .button8:active {
+        background: #0097a7;
+    }
+
+    .alert-warning {
+        float: inside;
+        clear: both;
+        width: 600px;
+        margin: 10px 34%;
+        text-align: center;
+        background: powderblue;
+    }
+
+</style>
+
+<div class="header-h1">
+    {% block title %}
+    {% endblock %}
+</div>
+<nav class="navbar">
+    <a href="{% url 'home' %}" class="button8">Home</a>
+    <a href="{% url 'course:my_courses' %}" class="button8">My courses</a>
+    <a href="{% url 'course:create' %}" class="button8">Create</a>
+    {% block content %}
+    {% endblock %}
+</nav>

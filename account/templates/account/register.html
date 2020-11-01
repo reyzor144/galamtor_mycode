@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+{#{% load widget_tweaks %}#}
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sign-up</title>
+        <link rel="stylesheet" href="{% static 'account/stylesheets/reg_styles.css' %}">
+    </head>
+    <body>
+        <div class="set-pos">
+            <h1 class="form-header">Register</h1>
+            <div class="form-body">
+                <form method="POST" action="">
+                    {% csrf_token %}
+                   {% for field in registration_form %}
+                       <div class="form-field">
+                           <label for="{{ field.id_for_label }}" class="field-name"> {{ field.label }}: </label>
+{#                       That's a rough way#}
+{#                           <h1 class="field-margin"></h1>#}
+                           {{ field }}
+
+                           {% if field.help_text %}
+                                <small class="field-hint">{{ field.help_text }}</small>
+                           {% endif %}
+{#                           {% for error in field.errors %} {#}
+{#                                <p style="color: red">{{ error }}#}
+{#                            {%  endfor %}#}
+                       </div>
+                    {% endfor %}
+
+                    <input type="submit" class="form-button" name="register_a_new_user" value="Sign up">
+                    <a class="login-link" href="{% url 'login' %}">Already have an account?</a>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'course/stylesheets/send_task.css' %}">
+    <title>{{ task.title }}</title>
+</head>
+<body>
+    <h1>{{ task.title }}</h1>
+
+    <div>
+        <p>
+            {{ task.task_text }}
+        </p>
+    </div>
+
+    <div>
+        <p>
+            {{ task.tests }}
+        </p>
+    </div>
+
+    <form action="{% url 'course:create_send' task.id %}" method="POST">
+        {% csrf_token %}
+        <textarea class="parcel-window" name="user_code"></textarea>
+        <button type="submit">Отправить</button>
+    </form>
+    {% if list %}
+        {% for send in list %}
+            <p>
+                {{ send }}
+            </p>
+        {% endfor %}
+    {% else %}
+        Посылок нет, ссылайте
+    {% endif %}
+</body>
+</html>
