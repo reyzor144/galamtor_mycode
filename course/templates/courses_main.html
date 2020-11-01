@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'course/stylesheets/send_task.css' %}">
+    <link rel="stylesheet" href="{% static 'account/stylesheets/account_styles.css' %}">
+    <style>
+        html, body {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .textbox {
+            margin-top: 60px;
+            margin-left: 100px;
+
+            width: 500px;
+            height: 400px;
+        }
+
+        .dpd-elem {
+            cursor: pointer;
+        }
+        .lang-button {
+
+        }
+
+        .langs {
+            display: none;
+        }
+
+        .show {display: block;}
+    </style>
+</head>
+<body>
+    <header class="header always-on-top">
+        <h1 class="site-name">Tasks</h1>
+        <a href="{% url 'home' %}" class="header-element first-header-element">Home</a>
+{#        {% if user.is_teacher %}#}
+        <a href="{% url 'course:create' %}" class="header-element">Create</a>
+{#        {% endif %}#}
+        <a href="{% url 'logout' %}" class="header-element">Logout</a>
+    </header>
+    <main>
+        <div class="flex-column fixed-left-menu">
+            {% for task in tasks %}
+                <div class="bottom-margin bottom-border">
+                    <a href="{% url 'course:courses_home' task.id %}" onclick="{% with cur_task=task %}{% endwith %}" class="task__title">{{ task.title }}</a>
+{#                    <a href="#"  class="task__title">{{ task.title }}</a>#}
+                </div>
+            {% endfor %}
+        </div>
+        <div class="task__field">
+            <h2 class="task-block__header">{{ cur_task.title }}</h2>
+            <p class="task-block__text">{{ cur_task.task_text | linebreaks }}</p>
+            <h3>Примеры тестов</h3>
+            <p>{{ cur_task.tests | linebreaks }}</p>
+            <form action="{% url 'course:create_send' cur_task.id %}" method="POST">
+                {% csrf_token %}
+                <textarea name="user_code" class="parcel-window"></textarea>
+                <button type="submit" onclick="ChooseLang()">Отправить</button>
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+            </form>
+            <div>
+                <button class="lang-button">lang</button>
+                <ul id="langDropdown" class="langs">
+                    <li><h5 href="#" class="dpd-elem">C++</h5></li>
+                    <li><h5 href="#" class="dpd-elem">Python</h5></li>
+                </ul>
+            </div>
+            <div class="res-box flex-column no-bottom-border">
+                {% if list %}
+                        {% for send in list %}
+                            <div class="res-box__row">
+                                <div class="res-box__elem">Name: {{ cur_task.title }}</div>
+                                <div class="res-box__elem">Date: {{ send.date }}</div>
+                                <div class="res-box__elem">Time: {{ send.runtime }}</div>
+                                <div class="res-box__elem">Status: {{ send.verdict }}
+                                    {% if "OK" != send.verdict %}
+                                     {{ send.last_test }}
+                                    {% endif %}
+                                </div>
+                            </div>
+                        {% endfor %}
+                {% else %}
+                    Посылок пока нет
+                {% endif %}
+            </div>
+        </div>
+    </main>
+    <script>
+        function addFile() {
+            let my_text = document.getElementsByName("user_code");
+            let file = document.getElementById("exampleFormControlFile1");
+            if (my_text[0].textContent === "") {
+                my_text = file.textContent;
+            }
+            return;
+        }
+
+        let lang_dpds = document.getElementsByClassName("dpd-elem");
+
+        for (let i = 0; i < lang_dpds.length; ++i) {
+            lang_dpds[i].addEventListener("click", function () {
+                // console.log("hi");
+                my_dropdowns_btns[0].textContent = lang_dpds[i].textContent;
+                document.getElementById("langDropdown").classList.toggle("show");
+            });
+        }
+
+        let my_dropdowns_btns = document.getElementsByClassName("lang-button");
+
+        for (let i = 0; i < my_dropdowns_btns.length; ++i) {
+          my_dropdowns_btns[i].addEventListener("click", function () {
+            document.getElementById("langDropdown").classList.toggle("show");
+          });
+        }
+
+        function ChooseLang() {
+            let my_button = document.getElementsByClassName("lang-button");
+            if (my_button[0].textContent === "Python") {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

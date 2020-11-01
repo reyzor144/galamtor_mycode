@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'course/stylesheets/send_task.css' %}">
+    <title>{{ task.title }}</title>
+</head>
+<body>
+    <h1>{{ task.title }}</h1>
+
+    <div>
+        <p>
+            {{ task.task_text }}
+        </p>
+    </div>
+
+    <div>
+        <p>
+            {{ task.tests }}
+        </p>
+    </div>
+
+    <textarea class="parcel-window"></textarea>
+    <button type="submit">Отправить</button>
+    <div class="res-box flex-column no-bottom-border">
+        <div class="res-box__row">
+            <div class="res-box__elem">Name: {{ task.title }}</div>
+            <div class="res-box__elem">Time: 0.8s</div>
+            <div class="res-box__elem">Status: <span>OK</span></div>
+        </div>
+        <div class="res-box__row">
+            <div class="res-box__elem">Name: {{ task.title }}</div>
+            <div class="res-box__elem">Time: 0.01s</div>
+            <div class="res-box__elem">Status: <span>WA 3</span></div>
+        </div>
+    </div>
+</body>
+</html>

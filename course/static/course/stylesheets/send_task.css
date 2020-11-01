@@ -1,0 +1,131 @@
+.parcel-window {
+    width: 500px;
+    height: 500px;
+}
+
+.always-on-top {
+    z-index: 3;
+}
+.create-task__margin {
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.fixed-left-menu {
+    position: fixed;
+    /*padding-left: 10px;*/
+    padding-top: 10px;
+    min-height: 20%;
+    width: 220px;
+    top: 50px;
+
+    border: 2px solid black;
+    /*margin-right: auto;*/
+    /*margin-top: 80px;*/
+}
+
+.site-name {
+    margin-top: 2px;
+    font-size: 20px;
+    font-family: "KacstTitle", sans-serif;
+
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+
+    /*background: #0097a7;*/
+}
+
+.task__field {
+    position: absolute;
+    top: 50px;
+    left: 240px;
+    width: 70%;
+    /*margin-left: 30%;*/
+    height: 100%;
+    z-index: 1;
+
+    /*background: #dddddd;*/
+}
+
+.bottom-margin {
+    margin-bottom: 10px;
+}
+.bottom-border {
+    border-bottom: 2px solid black;
+}
+
+.task__title {
+    font-family: "KacstTitle", sans-serif;
+    margin-left: 10px;
+
+    text-decoration: none;
+    color: darkslateblue;
+}
+
+.task__title:hover {
+    color: orange;
+}
+
+
+.res-box {
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    align-items: center;
+    min-height: 30px;
+    width: 95%;
+    margin-top: 30px;
+    border: 2px solid black;
+}
+
+.res-box__row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    justify-content: space-between;
+
+    border-bottom: 2px solid black;
+}
+
+.res-box__elem {
+    /*align-self: baseline;*/
+    font-size: 15px;
+    width: 20%;
+
+    /*background: blue;*/
+}
+
+.res-box_left-border {
+    border-left: 2px solid black;
+}
+
+.res-box_right-border {
+    border-right: 2px solid black;
+}
+
+.no-bottom-border {
+    border-bottom: none;
+}
+
+.task-block {
+    width: 400px;
+    height: 300px;
+
+    /*background: green;*/
+}
+
+.task-block__header {
+    width: 100%;
+    height: 20px;
+}
+
+.task-block__text {
+    font-family: "Bahnschrift", sans-serif;
+    font-size: 16px;
+}

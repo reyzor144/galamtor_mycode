@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is test website that I'm making to get prepared for the hackathon">
+        <link rel="stylesheet" href="{% static 'home_page/stylesheets/home_styles.css' %}">
+        <title>Informatics</title>
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="header-text">
+                <h1 class="site-name">My code</h1>
+                <nav class="navbar">
+                    <a href="{% url 'course:courses_home' st_task.id %}" class="navbar-element first-navbar-elem">Courses</a>
+                    <a href="#" class="navbar-element">Tutorials</a>
+                    {% if user.is_authenticated %}
+                        <a href="{% url 'account' %}" class="navbar-element" id="Login_button">{{ user.username }}</a>
+                    {% else %}
+                        <a href="{% url 'login' %}" class="navbar-element" id="Login_button">Login</a>
+                    {% endif %}
+{#                    {{ user.is_teacher }}#}
+                </nav>
+            </div>
+        </header>
+
+        <section class="content">
+            <div class="content-elem courses-menu">
+                <h2 class="courses-title">Courses</h2>
+
+                <div class="course-block">
+                    <h3 class="course-title"><button class="course-dropdown-btn">▼</button> Introduction to C++</h3>
+                    <ul id="myDropdown1" class="course-content">
+                        <li><a href="#" class="course-elem">Basic syntax</a></li>
+                        <li><a href="#" class="course-elem">If conditions</a></li>
+                        <li><a href="#" class="course-elem">Cycles</a></li>
+                        <li><a href="#" class="course-elem">Basic input and output</a></li>
+                    </ul>
+                </div>
+
+                <div class="course-block">
+                    <h3 class="course-title"><button class="course-dropdown-btn">▼</button> Introduction to Python</h3>
+                    <ul id="myDropdown2" class="course-content">
+                        <li><a href="#" class="course-elem">Basic syntax</a></li>
+                        <li><a href="#" class="course-elem">If conditions</a></li>
+                        <li><a href="#" class="course-elem">Cycles</a></li>
+                        <li><a href="#" class="course-elem">Basic input and output</a></li>
+                    </ul>
+                </div>
+
+                <div class="course-block">
+                    <h3 class="course-title"><button class="course-dropdown-btn">▼</button> Graphs</h3>
+                    <ul id="myDropdown3" class="course-content">
+                        <li><a href="#" class="course-elem">Theory</a></li>
+                        <li><a href="#" class="course-elem">Acyclic</a></li>
+                        <li><a href="#" class="course-elem">Cyclic</a></li>
+                        <li><a href="#" class="course-elem">Algorithms</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <aside class="content-elem news-sect">
+                <h3 class="news-title">Announcements</h3>
+
+                <div class="news-post">
+                    Hi there!
+                </div>
+
+                <div class="news-post">
+                    No news yet
+                </div>
+            </aside>
+
+        </section>
+
+        <footer class="footer">
+            <h4 class="footer-info">This is a prototype</h4>
+        </footer>
+
+        <script src="{% static 'home_page/scripts/Visual_enh.js' %}"></script>
+{#        {% if %}#}
+{#        {% endif %}#}
+    </body>
+</html>

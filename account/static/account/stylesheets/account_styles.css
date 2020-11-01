@@ -1,0 +1,176 @@
+html, body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.sidenavbar {
+    height: 100vh;
+    width: 0;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    overflow-x: hidden;
+
+    z-index: 1;
+
+    /*overflow-x: hidden; !* Disable horizontal scroll *!*/
+    padding-top: 5%;
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+
+    background-color: rgb(240, 248, 255);
+}
+
+.sidenavbar a {
+    font-family: "Bahnschrift", sans-serif;
+    font-size: 25px;
+
+    margin-top: 5%;
+
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+}
+
+/*.sidenav a:hover {*/
+/*  color: #f1f1f1;*/
+/*}*/
+
+.sidenav-close-btn {
+    position: absolute;
+    top: 0;
+    /*display: block;*/
+    font-size: 25px;
+    margin-left: 80%;
+
+    cursor: pointer;
+}
+
+/*-----------------------------------------------------------------*/
+
+.header {
+    display: flex;
+
+    position: fixed;
+    height: 30px;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    transition: top 0.3s;
+
+    border-bottom-style: groove;
+
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.header a:hover {
+    color: orange;
+}
+
+.header-element {
+    margin: auto 5% auto 0;
+
+    font-family: "Bahnschrift", sans-serif;
+    font-size: 16px;
+}
+
+.sidemenu-button {
+    margin-left: 10px;
+
+    /*font-size: 4vh;*/
+
+    cursor: pointer;
+}
+
+.first-header-element {
+    margin: auto 5% auto auto;
+
+    /*-webkit-tap-highlight-color: black;*/
+    /*text-decoration-color: black;*/
+
+}
+
+/*-----------------------------------------------------------------*/
+
+.first-box-margin {
+    margin-top: 4%;
+}
+
+.box-margin {
+    margin-left: 2.5%;
+}
+
+.box-attribs {
+    display: block;
+
+    font-family: "KacstTitle", sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.box-attribs a {
+    margin-left: 10%;
+    font-weight: normal;
+    font-size: 50%;
+
+    text-decoration: none;
+}
+
+.edit-button {
+    width: 20px;
+
+    margin-left: 35px;
+}
+
+.infobox {
+    width: 95%;
+    min-height: 100px;
+
+    border-style: groove;
+
+    background: rgba(255, 250, 250, .5);
+}
+
+.id-field {
+    display: inline-block;
+    width: 40%;
+    height: 25%;
+    margin-top: 4px;
+    margin-left: 5%;
+    padding-top: 1%;
+
+    font-family: "Bahnschrift", sans-serif;
+    font-size: 16px;
+    /*background: blue;*/
+}
+
+/*-----------------------------------------------------------------*/
+
+.footer {
+    display: flex;
+
+    width: 100%;
+    height: 15vh;
+
+    margin-top: 100vh;
+
+    border-top-style: groove;
+    border-top-width: 5px;
+
+    /*background-color: lightblue;*/
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}
+
+.footer-info {
+    margin: auto;
+}
