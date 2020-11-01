@@ -11,8 +11,11 @@
 * Для **Linux Ubuntu**
 
   Установите фрэймворк *django*, на котором и сделан проект, введя в терминал комманды:
-  `sudo apt update`
-  `sudo apt install python3-django`
+
+  ```
+  sudo apt update
+  sudo apt install python3-django
+  ```
 
   (Язык *Python* уже предустановлен на системе Ubuntu)
   
