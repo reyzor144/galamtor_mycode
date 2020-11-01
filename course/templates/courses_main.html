@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'course/stylesheets/send_task.css' %}">
+    <link rel="stylesheet" href="{% static 'account/stylesheets/account_styles.css' %}">
+</head>
+<body>
+    <header class="header always-on-top">
+        <h1 class="site-name">Tasks</h1>
+        <a href="{% url 'home' %}" class="header-element first-header-element">Home</a>
+{#        {% if user.is_teacher %}#}
+        <a href="{% url 'course:create' %}" class="header-element">Create</a>
+{#        {% endif %}#}
+        <a href="{% url 'logout' %}" class="header-element">Logout</a>
+    </header>
+    <main>
+        <div class="flex-column fixed-left-menu">
+            {% for task in tasks %}
+                <div class="bottom-margin bottom-border">
+                    <a href="{% url 'course:courses_home' task.id %}" onclick="{% with cur_task=task %}{% endwith %}" class="task__title">{{ task.title }}</a>
+{#                    <a href="#"  class="task__title">{{ task.title }}</a>#}
+                </div>
+            {% endfor %}
+        </div>
+        <div class="task__field">
+            <h2 class="task-block__header">{{ cur_task.title }}</h2>
+            <p class="task-block__text">{{ cur_task.task_text | linebreaks }}</p>
+            <h3>Примеры тестов</h3>
+            <p>{{ cur_task.tests | linebreaks }}</p>
+
+            <textarea class="parcel-window"></textarea>
+            <button type="submit">Отправить</button>
+            <div class="res-box flex-column no-bottom-border">
+                <div class="res-box__row">
+                    <div class="res-box__elem">Name: {{ task.title }}</div>
+                    <div class="res-box__elem">Time: 0.8s</div>
+                    <div class="res-box__elem">Status: <span>OK</span></div>
+                </div>
+                <div class="res-box__row">
+                    <div class="res-box__elem">Name: {{ task.title }}</div>
+                    <div class="res-box__elem">Time: 0.01s</div>
+                    <div class="res-box__elem">Status: <span>WA 3</span></div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

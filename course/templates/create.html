@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'course/stylesheets/send_task.css' %}">
+    <link rel="stylesheet" href="{% static 'account/stylesheets/account_styles.css' %}">
+</head>
+<body>
+    <header class="header always-on-top">
+        <h1 class="site-name">Tasks</h1>
+        <a href="{% url 'home' %}" class="header-element first-header-element">Home</a>
+        <a href="{% url 'logout' %}" class="header-element">Logout</a>
+    </header>
+    <main>
+        <form method="post" class="create-task__margin">
+            {% csrf_token %}
+            {{ form.title }} <br>
+            {{ form.preview }} <br>
+            {{ form.task_text }} <br>
+            {{ form.tests }} <br>
+            <span>{{ error }}</span>
+            <button class="button8" type="submit">Добавить задание</button>
+        </form>
+    </main>
+</body>
+</html>
